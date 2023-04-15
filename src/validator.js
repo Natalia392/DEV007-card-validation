@@ -3,7 +3,7 @@ const validator = {
 
   //Aquí va la función isValid
   isValid: function(numberValidation) {
-    //Declaro la variable que transforma los múmeros ingresados en un array
+    //Declaro la variable que transforma los números ingresados en un array
     const createArray = numberValidation.split('');
     console.log(createArray);
     //Declaro la variable que transforma el array de string en array de números
