@@ -4,11 +4,31 @@
     <meta charset="utf-8">
     <title>Tarjeta de crédito válida</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Asap:wght@300&family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header></header>
-    <main></main>
+
+    <header>
+      <h1>Ingresa los números de tu tarjeta</h1>
+    </header>
+
+    <main>
+      <section>
+        <img alt="cardImg" src="/img/card.png" width="300" height="200">
+      </section>
+      <section>
+      <!--Aquí va el input para recibir el número de la tarjeta-->
+        <label for="cardNumber">Número de tarjeta:</label>
+        <br>
+        <input  id="cardNumber" type="text" maxlength="19" placeholder="XXXX XXXX XXXX XXXX" onkeypress="">
+        <br>
+      <!--Aquí va el botón para ingresar el número de la tarjeta-->
+        <button id="submitButton" type="button">Enviar</button>
+      </section>
+    </main>
+
     <footer></footer>
+
     <script src="index.js" type="module"></script>
   </body>
 </html>

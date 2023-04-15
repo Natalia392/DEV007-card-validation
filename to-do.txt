@@ -1,0 +1,36 @@
+Primero leí el readme
+Traté de familiarizarme con los programas que hay que usar
+declaré la variable a partir de lo que se recibe en el input
+
+
+
+- Preguntar por el número de la tarjeta de crédito
+- Pasar los números a un array en orden inverso
+- Aplicar la operación a los números de las posiciones pares
+- Sumar los dígitos y nuevos dígitos
+- Comprobar si es una tarjeta válida
+
+preguntar a karla macedo
+
+No había logrado organizarme bien.
+Me quedo con recordar hacer lo siguiente:
+	un todo list
+	Ir registrando en un archivo personal lo del daily
+	Hacer un prototipo
+	Ir registrando las páginas que me sirvieron para resolver una duda junto a la duda.
+
+	qué aprendí: 
+Aprendí a forkear y clonar un repositorio. También fortalecí lo que sabía sobre guardar variables a partir de un input.  
+	que no entendí o me costó:
+Me costó idear un método para organizarme.
+	Qué debo hacer diferente:
+La planificación: hacer un to do e ir registrando mis avances de forma simple y que luego pueda plantear en forma de preguntas. Registrar bloqueos.
+	Siguiente paso
+Hacer un prototipo. Pasar los números a un array en orden inverso Aplicar la operación a los números de las posiciones pares Sumar los dígitos y nuevos dígitos Comprobar si es una tarjeta válida. Investigar sobre cómo hacer las pruebas unitarias. 
+
+
+Hacer un prototipo. Pasar los números a un array en orden inverso
+Aplicar la operación a los números de las posiciones pares
+Sumar los dígitos y nuevos dígitos
+Comprobar si es una tarjeta válida. 
+Investigar sobre cómo hacer las pruebas unitarias.
