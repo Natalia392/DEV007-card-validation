@@ -1,13 +1,17 @@
 const validator = {
 
+
   //Aquí va la función isValid
   isValid: function(numberValidation) {
-    //Declaro la variable que transforma el string en números
-    const stringToNumber = parseInt(numberValidation);
     //Declaro la variable que transforma los múmeros ingresados en un array
-    const createArray = stringToNumber.split('');
-    //Declaro la variable que reversa el array de números
-    const reverseArray = createArray.reverse();
+    const createArray = numberValidation.split('');
+    console.log(createArray);
+    //Declaro la variable que transforma el array de string en array de números
+    const arrayOfNumbers = createArray.map(Number);
+    console.log(arrayOfNumbers);
+    //Declaro la variable que reversa el array de números 
+    const reverseArray = arrayOfNumbers.reverse();
+    console.log(reverseArray);
     //Creo una función para identificar qué números son pares y qué números son impares en el array
     function pairIndex(arr) {
       //Declaro el array vacío que luego contendrá los números en posiciones pares de la tarjeta
