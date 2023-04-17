@@ -7,20 +7,22 @@ body {
     background-image: linear-gradient(to bottom right, #FBD5F4, #FEFFF3);
     background-repeat: no-repeat;
     background-size: contain;
+    text-align: center;
 }
 
 h1{
     font-size: large;
 }
 
-#cardImg {
-
+.cardImg {
+    text-align: center;
 }
 
-#submitButton {
+.inputTarjeta {
     font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    
+    text-align: center;
+    padding: 5px 5px;
 }
 
-#cardNumber {
-    font-family: 'Source Sans Pro', sans-serif;
-}

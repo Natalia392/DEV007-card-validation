@@ -19,8 +19,6 @@ submitButton.addEventListener('click', () => {
   
 
 
-  // console.log(reversedArrayCreditCardNumber);
-  //Identifico qué números son pares y qué números son impares en el array
 
   //Aplico la función isValid para los números ingresados
   const valid = validator.isValid(creditCardNumber);
