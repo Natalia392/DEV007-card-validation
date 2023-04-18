@@ -16,7 +16,7 @@ submitButton.addEventListener('click', () => {
   //Aplico la función maskify para los números ingresados
   const mask = validator.maskify(creditCardNumber);
   console.log(mask);
-  
+
 
 
 
@@ -48,6 +48,6 @@ submitButton.addEventListener('click', (event) => {
 
 
 
-    
+
 
 
