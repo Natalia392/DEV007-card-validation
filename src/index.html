@@ -18,14 +18,18 @@
         <img alt="cardImg" src="/img/card.png" width="300" height="200">
       </section>
 
-      <section class="inputTarjeta">
+      <section class="tarjeta">
       <!--Aquí va el input para recibir el número de la tarjeta-->
         <label for="cardNumber" class="inputTarjeta">Número de tarjeta:</label>
         <br>
-        <input  id="cardNumber" class="inputTarjeta" type="text" maxlength="19" placeholder="0000 0000 0000 0000" onkeypress="">
+        <section id="inputTarjeta">
+          <input  id="cardNumber" class="inputTarjeta" type="text" maxlength="19" placeholder="0000 0000 0000 0000" onkeypress="">
+        </section>
         <br>
       <!--Aquí va el botón para ingresar el número de la tarjeta-->
-        <button id="submitButton" class="inputTarjeta" type="button">Enviar</button>
+        <section class="button">
+          <button id="submitButton" class="button" type="button">Enviar</button>
+        </section>
       </section>
       <section id="respuesta-mask">
 

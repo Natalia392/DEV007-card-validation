@@ -8,10 +8,10 @@ const validator = {
     const arrayOfNumbers = createArray.map(Number); //Declaro la variable que transforma el array de string en array de números
     
     const reverseArray = arrayOfNumbers.reverse(); //Declaro la variable que reversa el array de números 
-    console.log(reverseArray);
+    //console.log(reverseArray);
     
 
-    //A partir del array reversado, saco los índices pares
+    //A partir del array reversado, saco los índices pares y los multiplico por 2
     for (let i = 0; i < reverseArray.length; i++) {
       //condición: 
       if(i % 2 !== 0) {
@@ -21,12 +21,12 @@ const validator = {
         if (reverseArray[i] >= 10) {
           let resultSum = 0;
           const sum2Digits = reverseArray[i].toString().split('');
-          console.log(sum2Digits + 'Los números de dos dígitos');
+          //console.log(sum2Digits + 'Los números de dos dígitos');
           for(let i = 0; i < sum2Digits.length; i++) {
             resultSum = resultSum + parseInt(sum2Digits[i]);
           }
           reverseArray[i] = resultSum;
-          resultSum = 0; 
+          resultSum = 0; //Para reinicar el resultSum en 0 al inicio del nuevo ciclo
         }
       }
     }  
@@ -35,10 +35,10 @@ const validator = {
     //sumo todos los números
     for(let i = 0; i < reverseArray.length; i++) {
       sumOfAllNumbers = sumOfAllNumbers + parseInt(reverseArray[i]);
-      console.log((reverseArray[i]) + ' El array de los índices pares, multiplicados por 2');
+      //console.log((reverseArray[i]) + ' El array de los índices pares, multiplicados por 2');
     }
     
-    console.log((sumOfAllNumbers) + ' Esta es mi suma');
+    //console.log((sumOfAllNumbers) + ' Esta es mi suma');
     
     if (sumOfAllNumbers % 10 === 0) {
       return true;

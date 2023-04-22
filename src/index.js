@@ -12,20 +12,25 @@ submitButton.addEventListener('click', () => {
 
   const valid = validator.isValid(creditCardNumber); //Declaro la constante para validar los números
 
-  //Para mostrar en pantalla los números enmaskarados:
-  const respuestaMask = document.getElementById('respuesta-mask');
+  const respuestaMask = document.getElementById('respuesta-mask'); //Para mostrar en pantalla los números enmascarados:
 
-
-  //Para mostrar a la usuaria si su tarjeta es o no válida, el siguiente condicional:
-  if (valid === true) {
-    alert('Tu tarjeta es válida');
-    respuestaMask.innerHTML = 'Tu tarjeta es válida';
-    respuestaMask.innerHTML = 'Tu tarjeta ingresada: ' +  mask;
+  //para que no acepte un input vacío:
+  if((creditCardNumber === '')) {
+    alert('Ingresa tu tarjeta')
   } else {
-    alert('Tu tarjeta es inválida');
-    respuestaMask.innerHTML = 'Tu tarjeta es inválida';
-    respuestaMask.innerHTML = 'Tu tarjeta ingresada: ' +  mask;
+    //Para mostrar a la usuaria si su tarjeta es o no válida, el siguiente condicional:
+    if (valid === true) {
+      alert('Tu tarjeta es válida');
+      respuestaMask.innerHTML = 'Tu tarjeta es válida';
+      respuestaMask.innerHTML = 'Tu tarjeta ingresada: ' +  mask;
+    } else {
+      alert('Tu tarjeta es inválida');
+      respuestaMask.innerHTML = 'Tu tarjeta es inválida';
+      respuestaMask.innerHTML = 'Tu tarjeta ingresada: ' +  mask;
+    }
   }
+
+  
 
   //console.log(creditCardNumber);
 });
