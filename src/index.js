@@ -22,11 +22,11 @@ submitButton.addEventListener('click', () => {
     if (valid === true) {
       alert('Tu tarjeta es válida');
       respuestaMask.innerHTML = 'Tu tarjeta es válida';
-      respuestaMask.innerHTML = 'Tu tarjeta ingresada: ' +  mask;
+      respuestaMask.innerHTML = 'Tarjeta ingresada: ' +  mask;
     } else {
       alert('Tu tarjeta es inválida');
       respuestaMask.innerHTML = 'Tu tarjeta es inválida';
-      respuestaMask.innerHTML = 'Tu tarjeta ingresada: ' +  mask;
+      respuestaMask.innerHTML = 'Tarjeta ingresada: ' +  mask;
     }
   }
 

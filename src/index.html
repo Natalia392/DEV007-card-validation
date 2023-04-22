@@ -4,36 +4,43 @@
     <meta charset="utf-8">
     <title>Tarjeta de crédito válida</title>
     <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Asap:wght@300&family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
   </head>
   <body>
 
     <header>
-      <h1>Ingresa los números de tu tarjeta</h1>
+      <h1>Ingresa los números de tu tarjeta:</h1>
     </header>
 
     <main>
 
-      <section class="cardImg">
-        <img alt="cardImg" src="/img/card.png" width="300" height="200">
-      </section>
+      <section class="cardContainer">
 
-      <section class="tarjeta">
+      <!--Aquí va la imagen de la tarjeta-->
+        <div id="cardImg">
+          <img alt="cardImg" src="/img/card.png" width="300" height="200">
+        </div>
+
       <!--Aquí va el input para recibir el número de la tarjeta-->
-        <label for="cardNumber" class="inputTarjeta">Número de tarjeta:</label>
+        <div class="cardInput">
+          <div class="label">
+            <label for="cardNumber">Número de tarjeta:</label> <br>
+          </div>
+          <div>
+            <input id="cardNumber" type="text" maxlength="19" placeholder="0000 0000 0000 0000">
+          </div>
+        </div>
         <br>
-        <section id="inputTarjeta">
-          <input  id="cardNumber" class="inputTarjeta" type="text" maxlength="19" placeholder="0000 0000 0000 0000" onkeypress="">
-        </section>
-        <br>
+
       <!--Aquí va el botón para ingresar el número de la tarjeta-->
-        <section class="button">
-          <button id="submitButton" class="button" type="button">Enviar</button>
-        </section>
-      </section>
-      <section id="respuesta-mask">
+        <div class="cardInput">
+          <button id="submitButton" type="button">Enviar</button>
+        </div>
+
+        <div class="cardOutput" id="respuesta-mask"> </div>
 
       </section>
+
+      
 
     </main>
 
