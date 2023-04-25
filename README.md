@@ -75,7 +75,8 @@ un input para anotar los números y un botón para ingresarlos.
 para diseñar el prototipo:**
 
 
-![](/src/img/card-eg.png)![](/src/img/card-eg2.png)
+![](/src/img/card-eg.png)
+![](/src/img/card-eg2.png)
 
 
 **Este es el prototipo que se diseñó:**
