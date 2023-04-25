@@ -33,8 +33,9 @@ y verificar que pueda pertenecer a una tarjeta de crédito válida.
 
 Temática:
 
-Al pensar este proyecto, se pensó en una ventana a la que se redirige a los usuarios 
-al momento de pagar desde cualquier tienda o página online. 
+Al pensar este proyecto, se pensó en que en el momento de comprar
+en una tienda online o de pagar online, las páginas pueden
+redirigir a los usuarios a una ventana para pagar.
 Esta es una ventana en la que aparece simplemente la instrucción de introducir
 los números de la tarjeta, seguido de la imagen de una tarjeta a modo de 
 ejemplo y luego el campo para ingresar los números con su respectivo botón.
@@ -58,163 +59,59 @@ Se nos plantearon los siguientes objetivos:
   en JavaScript
 * Implementar control de versiones con git (y la plataforma github)
 
-Y por otro lado, yo me plantee lo siguiente:
+Y por otro lado, yo me propuse asumir las siguientes recomendaciones
+que nos hicieron:
 
-* Ir paso a paso, sin traar
-
-Como continuación del proyecto de preadmisión, volverás a trabajar sobre
-fundamentos de JavaScript, incluyendo conceptos como variables, condicionales,
-y funciones, así como eventos y manipulación básica del DOM, fundamentos de
-HTML y CSS. Mientras desarrollas este proyecto, te familiarizarás con nuevos
-conceptos también.
-
-
-
-
-
-## 3. Consideraciones generales
-
-* Este proyecto lo resolvemos de manera **individual**.
-* El rango de tiempo estimado para completar el proyecto es de 1 a 3 Sprints.
 * Enfócate en aprender y no solamente en "completar" el proyecto.
 * Te sugerimos que no intentes saberlo todo antes de empezar a codear.
   No te preocupes demasiado ahora por lo que _todavía_ no entiendas.
   Irás aprendiendo.
-
-## 4. Hito: Criterios de aceptación mínimos del proyecto
-
-Estos son los requisitos que tu proyecto debe que cumplir para asegurar que tu
-trabajo cubra los objetivos principales.
-
-**1. Una interfaz que debe permitir a la usuaria:**
-
-* Insertar un numero (texto) que quieres validar. Usa solo caracteres numéricos
-  (dígitos) en la tarjeta a validar [0-9].  
-* Ver si el resultado es válido o no.  
-* Ocultar todos los dígitos del número de tarjeta a exepción de los últimos
-  4 caracteres.  
-* No debes poder ingresar un campo vacío.  
-
-**2. Pruebas unitarias de los métodos.**  
-Los metódos de `validator` (`isValid` y `maskify`) deben tener cobertura con
-pruebas unitarias.
-
-**3. Código de tu proyecto subido a tu repo e interfaz "desplegada".**  
-El código final debe estar subido en un repositorio en GitHub. La interfaz o
-pagina web, debe ser "desplegada" (accesible públicamente online) usando
-GitHub Pages.
   
-**4. Un README que contiene una definición del producto.**  
-En el README cuéntanos cómo pensaste en los usuarios y cuál fue tu proceso
-para definir el producto final a nivel de experiencia y de interfaz.  
-Estas preguntas sirven como guía:
+Mi objetivo personal fue alcanzar los objetivos planteados arriba, 
+entendiendo lo mejor posible los pasos que daba para lograrlo.
 
-* Quiénes son los principales usuarios de producto.
-* Cuáles son los objetivos de estos usuarios en relación con tu producto.
-* Cómo crees que el producto que estás creando está resolviendo sus problemas.
+Este proyecto se resolvió de manera individual, 
+en el período de 2 sprints. 
 
-Con estos requisitos cumplidos puedes
-[considerar agendar un Project Feedback con unx coach.](#9-para-considerar-project-feedback)
+## 3. El proyecto:
 
-## 5. Hito Opcional: Mostrar la franquicia de tarjeta
+En la página desarrollada nos encontramos con:
 
-Las partes opcionales tienen como intención permitirte profundizar un poco más
-sobre los objetivos de aprendizaje del proyecto. Todo en la vida tiene pros y
-contras, decide sabiamente si quieres invertir el tiempo en profundizar/
-perfeccionar o aprender cosas nuevas en el siguiente proyecto.
+**1. Una interfaz que permite a la usuaria:**
 
-En hito 2 puedes además de validar si el número de la
-tarjeta es válida, mostrar la [franquicia](https://es.wikipedia.org/wiki/N%C3%BAmero_de_tarjeta_bancaria)
-de la tarjeta (ej: Visa, MasterCard, etc)
-usando estas [reglas de validación](https://stevemorse.org/ssn/cc.html).
-Si escribes un nuevo método para eso, hay que hacer pruebas unitarias.
+* Insertar un numero (texto) para validar. Este input sólo permite
+  usar caracteres numéricos.
+  (dígitos) en la tarjeta a validar [0-9].  
+* Muestra en pantalla los siguientes mensajes:
+  * Los números de la tarjeta ocultos hasta los últimos cuatro dígitos.
+  * El mensaje que indica si la tarjeta es válida o inválida.
+  * Un mensaje en rojo que advierte que sólo se pueden ingresar números
+    en el caso de que la usuaria ingrese letras o espacios.
+* Si se presiona el botón sin haber enviado nada, manda un alert que
+  indica que debe ingresarse el número de la tarjeta.
 
-## 6. Consideraciones técnicas
+La idea al desarrollar el proyecto fue crear una interfaz simple 
+y sin más información que la que se facilita a los usuarios
+al momento de pagar online, en donde se les pide la información
+para poder procesar el pago con su tarjeta.
+Es por eso que no se añadió mayor interacción o imágenes al diseño.
+El objetivo de los usuarios es introducir su tarjeta para que se valide
+y así poder realizar el proceso de pago.
+Desde ese punto de vista, se cumple con entregar esa interfaz al usuario
+y la validación o no validación de su tarjeta, así como facilitarle
+el no ingresar caracteres que de por sí serán inválidos.
 
-La lógica del proyecto debe estar implementada completamente en JavaScript. En
-este proyecto NO está permitido usar librerías o frameworks, solo JavaScript
-puro también conocido como Vanilla JavaScript.
+Estas son algunas de las imágenes que se tomaron como referencia
+para diseñar el prototipo:
 
-Para comenzar este proyecto tendrás que hacer un _fork_ y _clonar_ este
-repositorio que contiene un _boilerplate_ con tests (pruebas). Un _boilerplate_
-es la estructura basica de un proyecto que sirve como un punto de partida con
-archivos inicial y configuración basica de dependencias y tests.
+![] 
 
-Los tests unitarios deben cubrir un mínimo del 70% de _statements_, _functions_
-y _lines_, y un mínimo del 50% de _branches_. El _boilerplate_ ya contiene el
-setup y configuración necesaria para ejecutar los tests (pruebas) así como _code
-coverage_ para ver el nivel de cobertura de los tests usando el comando `npm
-test`.
+El proyecto está desplegado en gitHub pages.
 
-El boilerplate que les damos contiene esta estructura:
+## 4. Consideraciones técnicas
 
-```text
-./
-├── .babelrc
-├── .editorconfig
-├── .eslintrc
-├── .gitignore
-├── README.md
-├── package.json
-├── src
-│   ├── validator.js
-│   ├── index.html
-│   ├── index.js
-│   └── style.css
-└── test
-    ├── .eslintrc
-    └── validator.spec.js
-```
+El proyecto corre todos los tests.
 
-### Descripción de scripts / archivos
-
-* `README.md`: debe explicar la información necesaria para el uso de tu aplicación
-  web, así como una introducción a la aplicación, su funcionalidad y decisiones de
-  diseño que tomaron.
-* `src/index.html`: este es el punto de entrada a tu aplicación. Este archivo
-  debe contener tu _markup_ (HTML) e incluir el CSS y JavaScript necesario.
-* `src/style.css`: este archivo debe contener las reglas de estilo. Queremos que
-  escribas tus propias reglas, por eso NO está permitido el uso de frameworks de
-  CSS (Bootstrap, Materialize, etc).
-* `src/validator.js`: acá debes implementar el objeto `validator`, el cual ya está
-  _exportado_ en el _boilerplate_. Este objeto (`validator`) debe contener dos
-  métodos:
-  - `validator.isValid(creditCardNumber)`: `creditCardNumber` es un `string`
-     con el número de tarjeta que se va a verificar. Esta función debe retornar
-     un `boolean` dependiendo si es válida de acuerdo al [algoritmo de Luhn](https://es.wikipedia.org/wiki/Algoritmo_de_Luhn).
-  - `validator.maskify(creditCardNumber)`: `creditCardNumber` es un `string` con
-    el número de tarjeta y esta función debe retornar un `string` donde todos menos
-    los últimos cuatro caracteres sean reemplazados por un numeral (`#`) o 🐱.
-    Esta función deberá siempre mantener los últimos cuatro caracteres
-    intactos, aún cuando el `string` sea de menor longitud.
-
-    Ejemplo de uso
-
-    ```js
-    maskify('4556364607935616') === '############5616'
-    maskify(     '64607935616') ===      '#######5616'
-    maskify(               '1') ===                '1'
-    maskify(               '')  ===                ''
-    ```
-
-* `src/index.js`: acá debes escuchar eventos del DOM, invocar
-  `validator.isValid()` y `validator.maskify()` según sea necesario y
-  actualizar el resultado en la UI (interfaz de usuario).
-* `test/validator.spec.js`: este archivo contiene algunos tests de ejemplo y acá
-  tendrás que implementar los tests para `validator.isValid()` y `validator.maskify()`.
-
-El _boilerplate_ incluye tareas que ejecutan [eslint](https://eslint.org/) y
-[htmlhint](https://github.com/yaniswang/HTMLHint) para verificar el `HTML` y
-`JavaScript` con respecto a una guías de estilos. Ambas tareas se ejecutan
-automáticamente antes de ejecutar las pruebas (tests) cuando usamos el comando
-`npm run test`. En el caso de `JavaScript` estamos usando un archivo de
-configuración de `eslint` que se llama `.eslintrc` que contiene un mínimo de
-información sobre el parser que usar (qué version de JavaScript/ECMAScript), el
-entorno (browser en este caso) y las [reglas recomendadas (`"eslint:recommended"`)](https://eslint.org/docs/rules/).
-En cuanto a reglas/guías de estilo en sí,
-usaremos las recomendaciones _por defecto_ de tanto `eslint` como `htmlhint`.
-
-***
 
 #### Deploy
 
