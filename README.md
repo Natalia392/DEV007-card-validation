@@ -6,8 +6,8 @@ https://natalia392.github.io/DEV007-card-validation/
 
 * [1. Preámbulo](#1-preámbulo)
 * [2. Resumen del proyecto](#2-resumen-del-proyecto)
-* [3. Consideraciones generales](#3-consideraciones-generales)
-* [4. Hito: Criterios de aceptación mínimos del proyecto](#4-hito-criterios-de-aceptación-mínimos-del-proyecto)
+* [3. Objetivos buscados durante el desarrollo del proyecto](#3-consideraciones-generales)
+* [4. El proyecto](#4-hito-criterios-de-aceptación-mínimos-del-proyecto)
 * [5. Hito Opcional: Mostrar la franquicia de tarjeta](#5-hito-opcional-mostrar-la-franquicia-de-tarjeta)
 * [6. Consideraciones técnicas](#6-consideraciones-técnicas)
 * [7. Objetivos de aprendizaje](#7-objetivos-de-aprendizaje)
@@ -40,14 +40,14 @@ Esta es una ventana en la que aparece simplemente la instrucción de introducir
 los números de la tarjeta, seguido de la imagen de una tarjeta a modo de 
 ejemplo y luego el campo para ingresar los números con su respectivo botón.
 
-Se eligió un rosa muy claro, para generar un aspecto agradable y un azul para
+Se eligió un blanco con tono rosa, para generar un aspecto agradable y un azul para
 complementarlo.
 
 La página muestra en pantalla, debajo del botón, el número de tarjeta oculto
 y también los mensajes que indican si la tarjeta es válida o inválida, así 
 como el mensaje que advierte que se deben ingresar sólo números.
 
-### Objetivos buscados durante el desarrollo del proyecto
+## 3. Objetivos buscados durante el desarrollo del proyecto
 
 Se nos plantearon los siguientes objetivos:
 
@@ -73,7 +73,7 @@ entendiendo lo mejor posible los pasos que daba para lograrlo.
 Este proyecto se resolvió de manera individual, 
 en el período de 2 sprints. 
 
-## 3. El proyecto:
+## 4. El proyecto:
 
 En la página desarrollada nos encontramos con:
 
@@ -104,28 +104,23 @@ el no ingresar caracteres que de por sí serán inválidos.
 Estas son algunas de las imágenes que se tomaron como referencia
 para diseñar el prototipo:
 
-![] 
+![](/src/img/card-eg.png)
+
+![](/src/img/card-eg2.png)
+
+Este es el prototipo que se diseñó
+
+![](/src/img/prototipo.png)
+
 
 El proyecto está desplegado en gitHub pages.
-
-## 4. Consideraciones técnicas
 
 El proyecto corre todos los tests.
 
 
-#### Deploy
+## 5. Objetivos de aprendizaje
 
-Hacer que los sitios estén publicados (o _desplegados_) para que usuarias de
-la web puedan acceder a él es algo común en proyectos de desarrollo de software.
-
-En este proyecto, utilizaremos _Github Pages_ para desplegar nuestro sitio web.
-
-El comando `npm run deploy` puede ayudarte con esta tarea y también puedes
- consultar su [documentación oficial](https://docs.github.com/es/pages).
-
-## 7. Objetivos de aprendizaje
-
-Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en tu proyecto. Piensa en eso al decidir tu estrategia de trabajo.
+Reflexión de objetivos de aprendizaje
 
 ### HTML
 
