@@ -1,0 +1,108 @@
+html, body {
+    height: 90%;
+}
+
+body {
+    margin-top: 30px;
+    background-image: linear-gradient(to bottom right, #FBD5F4, #FEFFF3);
+    font-family: 'Bahnschrift', sans-serif;
+    font-weight: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    font-weight:normal;
+    color:#4b3d71;
+}
+
+/* Incluye la sección grande que contiene el input y el botón y la otra sección que contiene el retorno en pantalla de la tarjeta */
+.cardContainer {
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+
+/* Desde el card container, se llama al input */
+.cardContainer input {
+    padding-top: 10px;
+    letter-spacing: 1px;
+    border-radius: 0.5rem;
+    text-align: center;
+    height: 30px;
+    width: 270px;
+    padding: 4px;
+    background-color: #E7E6E6;
+    border: none;
+    position: relative;
+    box-shadow: 0 5px 7px 0 rgba(92, 92, 92, 0.2), 0 6px 7px 0 rgba(84, 84, 84, 0.07);
+}
+
+
+/* Sólo el label */
+.label { 
+    font-size:larger;
+    color:#4b3d71;
+    border-bottom: 1px solid #4b3d71;
+    padding-bottom: 10px;
+    padding: left 8px;
+    width: 290px;
+    position: relative;
+}
+
+/* Desde el card container, se llama al botón */
+.cardContainer button {
+    border-radius: 0.5rem;
+    text-align: center;
+    height: 50px;
+    width: 290px;
+    border: none;
+    background-color: #7b64b6;
+    color: white;
+    font-size: larger;
+    letter-spacing: 1px;
+    box-shadow: 0 10px 10px 0 rgba(92, 92, 92, 0.2), 0 10px 10px 0 rgba(84, 84, 84, 0.07);
+}
+
+/* Texto que muestra la tarjeta enmascarada */
+.cardOutput {
+    padding-top: 3px;
+    color: #4b3d71;
+}
+
+#just-numbers {
+    padding-top: 3px;
+    color: #e20b0b;
+}
+
+/* cuando pasa el mouse encima del input*/
+#cardNumber:hover {
+    background-color: #d2d2d2;
+}
+
+#cardNumber:active{
+    background-color: #d2d2d2;
+}
+
+/* Hover del botón */
+#submitButton:hover {
+    background-color: #6247AA;
+    color: white;
+}
+
+#submitButton:active {
+    background-color: #4b3d71;
+    color: white;
+}
+
+
+/* me falta el cardOutput */

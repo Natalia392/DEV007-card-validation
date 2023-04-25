@@ -6,18 +6,50 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header></header>
+
+    <header>
+      <h1>Ingresa los números de tu tarjeta:</h1>
+    </header>
+
     <main>
 
-      <form>
-        <label for="Número de tarjeta">Número de tarjeta:</label>
-        <input type="number" id="Número de tarjeta" min="0" placeholder="Números de tarjeta">
+      <section class="cardContainer">
 
-        <button id="submitButton">Enviar</button>
-      </form>
+      <!--Aquí va la imagen de la tarjeta-->
+        <div id="cardImg">
+          <img alt="cardImg" src="/img/card.png" width="300" height="200">
+        </div>
+
+      <!--Aquí va el input para recibir el número de la tarjeta-->
+        <div class="cardInput">
+          <div class="label">
+            <label for="cardNumber">Número de tarjeta:</label> <br>
+          </div>
+          <div>
+            <input id="cardNumber" type="text" maxlength="19" placeholder="0000 0000 0000 0000">
+          </div>
+        </div>
+        <br>
+
+      <!--Aquí va el botón para ingresar el número de la tarjeta-->
+        <div class="cardInput">
+          <button id="submitButton" type="button">Enviar</button>
+        </div>
+
+        <div class="cardOutput">
+          <p id="respuesta-mask"></p>
+          <p id="isItValid"></p>
+          <p id="just-numbers"></p>
+        </div>
+
+      </section>
+
+      
 
     </main>
+
     <footer></footer>
+
     <script src="index.js" type="module"></script>
   </body>
 </html>
