@@ -16,38 +16,37 @@
 
 ## 1. Preámbulo
 
-El [algoritmo de Luhn](https://es.wikipedia.org/wiki/Algoritmo_de_Luhn),
-también llamado algoritmo de módulo 10, es un método de suma de verificación,
-se utiliza para validar números de identificación; tales como el IMEI de los
-celulares, tarjetas de crédito, etc.
+Para el proyecto Card Validation, se nos pide crear una página web para ingresar números de tarjetas de crédito. 
+A partir de los números inngresados, esta página debe lograr dos cosas:
 
-Este algoritmo es simple. Obtenemos la reversa del número a verificar (que
-solamente contiene dígitos [0-9]); a todos los números que ocupan una posición
-par se les debe multiplicar por dos, si este número es mayor o igual a 10,
-debemos sumar los dígitos del resultado; el número a verificar será válido si
-la suma de sus dígitos finales es un múltiplo de 10.
+1. Que se valide si el número puede pertenecer a una tarjeta de crédito. 
+Para esto se utiliza el algoritmo de Luhn, que indica los pasos a seguir para procesar un número
+y verificar que pueda pertenecer a una tarjeta de crédito válida.
 
-![gráfica de algoritmo de Luhn](https://user-images.githubusercontent.com/12631491/217016579-865679e0-0949-4afd-b13f-d2ebba7a0c54.png)
+2. Que muestre en pantalla los números de la tarjeta, ocultándolos todos salvo los últimos cuatro.
+
+    ![gráfica de algoritmo de Luhn](https://user-images.githubusercontent.com/12631491/217016579-865679e0-0949-4afd-b13f-d2ebba7a0c54.png)
 
 ## 2. Resumen del proyecto
 
-En este proyecto tendrás que construir una aplicación web que le permita a un
-usuario validar el número de una tarjeta de crédito. Además, tendrás que
-implementar funcionalidad para ocultar todos los dígitos de una tarjeta menos
-los últimos cuatro.
+Temática:
 
-La temática es libre. Tú debes pensar en qué situaciones de la vida real se
-necesitaría validar una tarjeta de crédito y pensar en cómo debe ser esa
-experiencia de uso (qué pantallas, explicaciones, mensajes, colores, ¿marca?)
-etc.
+Al pensar este proyecto, se pensó en una ventana a la que se redirige a los usuarios 
+al momento de pagar desde cualquier tienda o página online. 
+Esta es una ventana en la que aparece simplemente la instrucción de introducir
+los números de la tarjeta, seguido de la imagen de una tarjeta a modo de 
+ejemplo y luego el campo para ingresar los números con su respectivo botón.
 
-Como continuación del proyecto de preadmisión, volverás a trabajar sobre
-fundamentos de JavaScript, incluyendo conceptos como variables, condicionales,
-y funciones, así como eventos y manipulación básica del DOM, fundamentos de
-HTML y CSS. Mientras desarrollas este proyecto, te familiarizarás con nuevos
-conceptos también.
+Se eligió un rosa muy claro, para generar un aspecto agradable y un azul para
+complementarlo.
 
-### Los objetivos generales de este proyecto son los siguientes
+La página muestra en pantalla, debajo del botón, el número de tarjeta oculto
+y también los mensajes que indican si la tarjeta es válida o inválida, así 
+como el mensaje que advierte que se deben ingresar sólo números.
+
+### Objetivos buscados durante el desarrollo del proyecto
+
+Se nos plantearon los siguientes objetivos:
 
 * Trabajar en base a un boilerplate, la estructura básica de un proyecto en
   distintas carpetas (a través modulos en JS).
@@ -56,6 +55,20 @@ conceptos también.
 * Aprender sobre objetos, estructuras, métodos e iteración (bucles)
   en JavaScript
 * Implementar control de versiones con git (y la plataforma github)
+
+Y por otro lado, yo me plantee lo siguiente:
+
+* Ir paso a paso, sin traar
+
+Como continuación del proyecto de preadmisión, volverás a trabajar sobre
+fundamentos de JavaScript, incluyendo conceptos como variables, condicionales,
+y funciones, así como eventos y manipulación básica del DOM, fundamentos de
+HTML y CSS. Mientras desarrollas este proyecto, te familiarizarás con nuevos
+conceptos también.
+
+
+
+
 
 ## 3. Consideraciones generales
 
