@@ -7,12 +7,9 @@ https://natalia392.github.io/DEV007-card-validation/
 * [1. Preámbulo](#1-preámbulo)
 * [2. Resumen del proyecto](#2-resumen-del-proyecto)
 * [3. Objetivos buscados durante el desarrollo del proyecto](#3-consideraciones-generales)
-* [4. El proyecto](#4-hito-criterios-de-aceptación-mínimos-del-proyecto)
-* [5. Hito Opcional: Mostrar la franquicia de tarjeta](#5-hito-opcional-mostrar-la-franquicia-de-tarjeta)
-* [6. Consideraciones técnicas](#6-consideraciones-técnicas)
-* [7. Objetivos de aprendizaje](#7-objetivos-de-aprendizaje)
-* [8. Pistas, tips y lecturas complementarias](#8-pistas-tips-y-lecturas-complementarias)
-* [9. Para considerar Project Feedback](#9-para-considerar-project-feedback)
+* [4. El proyecto](#4-El-proyecto)
+* [5. Conclusiones] (#5-conclusiones)
+
 
 ***
 
@@ -49,7 +46,7 @@ como el mensaje que advierte que se deben ingresar sólo números.
 
 ## 3. Objetivos buscados durante el desarrollo del proyecto
 
-Se nos plantearon los siguientes objetivos:
+**Se nos plantearon los siguientes objetivos:**
 
 * Trabajar en base a un boilerplate, la estructura básica de un proyecto en
   distintas carpetas (a través modulos en JS).
@@ -59,25 +56,41 @@ Se nos plantearon los siguientes objetivos:
   en JavaScript
 * Implementar control de versiones con git (y la plataforma github)
 
-Y por otro lado, yo me propuse asumir las siguientes recomendaciones
-que nos hicieron:
-
-* Enfócate en aprender y no solamente en "completar" el proyecto.
-* Te sugerimos que no intentes saberlo todo antes de empezar a codear.
-  No te preocupes demasiado ahora por lo que _todavía_ no entiendas.
-  Irás aprendiendo.
-  
-Mi objetivo personal fue alcanzar los objetivos planteados arriba, 
-entendiendo lo mejor posible los pasos que daba para lograrlo.
-
 Este proyecto se resolvió de manera individual, 
 en el período de 2 sprints. 
 
+
 ## 4. El proyecto:
 
-En la página desarrollada nos encontramos con:
+En la página desarrollada nos encontramos con lo siguiente:
 
-**1. Una interfaz que permite a la usuaria:**
+**Diseño de la página:**
+
+**La interfaz permite a la usuaria:**
+
+Como se mencionó, la página tiene una interfaz que presenta
+un input para anotar los números y un botón para ingresarlos.
+
+**Estas son algunas de las imágenes que se tomaron como referencia
+para diseñar el prototipo:**
+
+
+![](/src/img/card-eg.png)
+
+
+![](/src/img/card-eg2.png)
+
+
+**Este es el prototipo que se diseñó:**
+
+
+![](/src/img/prototipo.png)
+
+
+
+**Funcionalidad de la página**
+
+Respecto a la funcionalidad, la página permite: 
 
 * Insertar un numero para validar. Este input sólo permite
   usar caracteres numéricos en la tarjeta a validar [0-9].  
@@ -89,29 +102,17 @@ En la página desarrollada nos encontramos con:
 * Si se presiona el botón sin haber enviado nada, manda un alert que
   indica que debe ingresarse el número de la tarjeta.
 
+
+## 5. Conclusiones
+
 La idea al desarrollar el proyecto fue crear una interfaz simple 
 y sin más que lo requerido al momento de pagar online, es decir,  
 la información para poder procesar el pago con su tarjeta.
-Es por eso que se prefirió no añadir mayor interacción o imágenes al diseño.
-Por otro lado, también quería asegurarme de entender bien lo básico requerido
-por lo que no quise incluir más factores al empezar a desarrollar. 
+ 
 El objetivo de los usuarios es introducir su tarjeta para que se valide
 y así poder realizar el proceso de pago.
-Desde ese punto de vista, se cumple con entregar esa interfaz al usuario
+
+Bajo esa consideración, se cumple con entregar esa interfaz al usuario
 y la validación o no validación de su tarjeta, así como facilitarle
 el no ingresar caracteres que de por sí serán inválidos.
-
-Estas son algunas de las imágenes que se tomaron como referencia
-para diseñar el prototipo:
-
-![](/src/img/card-eg.png)
-
-![](/src/img/card-eg2.png)
-
-Este es el prototipo que se diseñó
-
-![](/src/img/prototipo.png)
-
-Finalmente, el proyecto está desplegado en gitHub pages y 
-corre todos los tests.
 
