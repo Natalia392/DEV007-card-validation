@@ -8,7 +8,7 @@ https://natalia392.github.io/DEV007-card-validation/
 * [2. Resumen del proyecto](#2-resumen-del-proyecto)
 * [3. Objetivos buscados durante el desarrollo del proyecto](#3-consideraciones-generales)
 * [4. El proyecto](#4-El-proyecto)
-* [5. Conclusiones] (#5-conclusiones)
+* [5. Conclusiones](#5-conclusiones)
 
 
 ***
