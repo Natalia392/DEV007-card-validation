@@ -3,6 +3,22 @@ import validator from './validator.js';
 //Declaro la variable del botón
 const submitButton = document.getElementById('submitButton');
 
+const inputBox = document.getElementById('cardNumber'); //para obtener lo ingresado en el input
+
+const justNumbers = document.getElementById('just-numbers');
+
+inputBox.addEventListener('input', (event) => {
+  const inputRegistered = event.target.value; //El input recibido 
+  const regex = /^[0-9]/g; //Búsqueda global de caracteres que no sean dígitos
+  inputBox.value = inputRegistered.replace(/\s/g, '').replace(/\D/g, ''); //Usando el método replace, se impide que ingrese spaces (\s) ni letras (\D)
+
+  if (regex.test(inputBox.value) === true) {
+    justNumbers.innerHTML = '';
+  } else {
+    justNumbers.innerHTML = 'Sólo puedes ingresar números';
+  }
+});
+
 //Escucho el botón que envía los números de la tarjeta y guardo el valor recibido en la variable creditCardNumber
 submitButton.addEventListener('click', () => {
   
@@ -14,24 +30,25 @@ submitButton.addEventListener('click', () => {
 
   const respuestaMask = document.getElementById('respuesta-mask'); //Para mostrar en pantalla los números enmascarados:
 
+  const isItValid = document.getElementById('isItValid');
+
   //para que no acepte un input vacío:
   if((creditCardNumber === '')) {
     alert('Ingresa tu tarjeta')
   } else {
     //Para mostrar a la usuaria si su tarjeta es o no válida, el siguiente condicional:
     if (valid === true) {
-      alert('Tu tarjeta es válida');
-      respuestaMask.innerHTML = 'Tu tarjeta es válida';
+
+      isItValid.innerHTML = 'Tu tarjeta es válida';
       respuestaMask.innerHTML = 'Tarjeta ingresada: ' +  mask;
+
     } else {
-      alert('Tu tarjeta es inválida');
-      respuestaMask.innerHTML = 'Tu tarjeta es inválida';
+
+      isItValid.innerHTML = 'Tu tarjeta es inválida';
       respuestaMask.innerHTML = 'Tarjeta ingresada: ' +  mask;
     }
   }
-
   
-
   //console.log(creditCardNumber);
 });
 

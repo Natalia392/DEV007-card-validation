@@ -24,6 +24,11 @@ h1 {
 .cardContainer {
     text-align: center;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
 }
 
 
@@ -35,7 +40,7 @@ h1 {
     text-align: center;
     height: 30px;
     width: 270px;
-    padding: 8px;
+    padding: 4px;
     background-color: #E7E6E6;
     border: none;
     position: relative;
@@ -48,11 +53,10 @@ h1 {
     font-size:larger;
     color:#4b3d71;
     border-bottom: 1px solid #4b3d71;
-    text-align: center;
     padding-bottom: 10px;
+    padding: left 8px;
     width: 290px;
-    left: 120px;
-    position: inherit;
+    position: relative;
 }
 
 /* Desde el card container, se llama al botón */
@@ -62,7 +66,7 @@ h1 {
     height: 50px;
     width: 290px;
     border: none;
-    background-color: #6247AA;
+    background-color: #7b64b6;
     color: white;
     font-size: larger;
     letter-spacing: 1px;
@@ -71,7 +75,13 @@ h1 {
 
 /* Texto que muestra la tarjeta enmascarada */
 .cardOutput {
+    padding-top: 3px;
     color: #4b3d71;
+}
+
+#just-numbers {
+    padding-top: 3px;
+    color: #e20b0b;
 }
 
 /* cuando pasa el mouse encima del input*/
@@ -85,7 +95,7 @@ h1 {
 
 /* Hover del botón */
 #submitButton:hover {
-    background-color: #7b64b6;
+    background-color: #6247AA;
     color: white;
 }
 
