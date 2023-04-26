@@ -66,7 +66,7 @@ En la página desarrollada nos encontramos con lo siguiente:
 
 **Diseño de la página:**
 
-**La interfaz permite a la usuaria:**
+La interfaz permite a la usuaria:
 
 Como se mencionó, la página tiene una interfaz que presenta
 un input para anotar los números y un botón para ingresarlos.
@@ -85,7 +85,6 @@ para diseñar el prototipo:**
 ![](/src/img/prototipo.png)
 
 
-
 **Funcionalidad de la página**
 
 Respecto a la funcionalidad, la página permite: 
@@ -100,6 +99,25 @@ Respecto a la funcionalidad, la página permite:
 * Si se presiona el botón sin haber enviado nada, manda un alert que
   indica que debe ingresarse el número de la tarjeta.
 
+Aquí se ve la página:
+
+![](/src/img/webpagestart)
+
+Aquí se ve lo que ocurre si se pone click sin introducir nada:
+
+![](/src/img/webpage-no-input)
+
+Aquí se ve lo que ocurre si se introduce algún caracter que no sean números:
+
+![](/src/img/webpage-just-numbers)
+
+Si se introduce un número inválido:
+
+![](/src/img/webpage-invalid-number)
+
+Si se introduce un número válido:
+
+![](/src/img/webpage-valid-number)
 
 ## 5. Conclusiones
 
