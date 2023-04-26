@@ -101,23 +101,23 @@ Respecto a la funcionalidad, la página permite:
 
 Aquí se ve la página:
 
-![](/src/img/webpagestart)
+![](/src/img/webpagestart.png)
 
 Aquí se ve lo que ocurre si se pone click sin introducir nada:
 
-![](/src/img/webpage-no-input)
+![](/src/img/webpage-no-input.png)
 
 Aquí se ve lo que ocurre si se introduce algún caracter que no sean números:
 
-![](/src/img/webpage-just-numbers)
+![](/src/img/webpage-just-numbers.png)
 
 Si se introduce un número inválido:
 
-![](/src/img/webpage-invalid-number)
+![](/src/img/webpage-invalid-number.png)
 
 Si se introduce un número válido:
 
-![](/src/img/webpage-valid-number)
+![](/src/img/webpage-valid-number.png)
 
 ## 5. Conclusiones
 
