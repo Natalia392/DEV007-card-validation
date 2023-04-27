@@ -46,19 +46,11 @@ como el mensaje que advierte que se deben ingresar sólo números.
 
 ## 3. Objetivos buscados durante el desarrollo del proyecto
 
-**Se nos plantearon los siguientes objetivos:**
-
-* Trabajar en base a un boilerplate, la estructura básica de un proyecto en
-  distintas carpetas (a través modulos en JS).
-* Conocer las herramientas de mantenimiento y mejora del código (linters y
-  pruebas unitarias).
-* Aprender sobre objetos, estructuras, métodos e iteración (bucles)
-  en JavaScript
-* Implementar control de versiones con git (y la plataforma github)
-
-Este proyecto se resolvió de manera individual, 
-en el período de 2 sprints. 
-
+* Desarrollar una interfaz para validar los números de una tarjeta de crédito
+* Crear un diseño simple y amigable para el usuario
+* Entregar al usuario un mensaje indicando si la tarjeta es válida o no
+* Advertir al usuario en caso de no ingresar nada al campo o de ingresar
+  caracteres no numéricos.
 
 ## 4. El proyecto:
 
